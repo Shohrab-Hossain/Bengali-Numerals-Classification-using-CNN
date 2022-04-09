@@ -1,9 +1,9 @@
 # Bengali Numerals Recognition using CNN
 
 
-
-<img src="readme-lib\Logo.png" alt="Logo" width="80%" style="min-width:150px;" />
-
+<p align=center>
+    <img src="readme-lib\Logo.png" alt="Logo" width="80%" style="min-width:150px;" />
+</p>
 
 
 **Digital image processing** investigates the portrayal and the control of *pictorial data*. With the development in *Machine Learning*, digital image processing is being promised over time. This research is an example of **Optical Character Recognition (OCR)**, where `Convolutional Neural Network (CNN)` is used for the *classification* of **`Bengali Numerals`**.
@@ -53,9 +53,9 @@ This research is based on **Optical Character Recognition (OCR)**. In this study
 This study aims to deploy a CNN for Optical Character Recognition. The methodology of this research is shown in this figure.
 
 
-
-<img src="readme-lib\Methodology.png" alt="Methodology" width="40%" style="min-width:150px;" />
-
+<p align=center>
+    <img src="readme-lib\Methodology.png" alt="Methodology" width="40%" style="min-width:150px;" />
+</p>
   
 
 
@@ -65,9 +65,9 @@ This study aims to deploy a CNN for Optical Character Recognition. The methodolo
 The CNN also consists of input and output layers like other neural networks. In between these two layers, there are many hidden layers. Some hidden layers are for feature extraction and a layer for classification.
 
 
-
-<img src="readme-lib\Design of CNN.png" alt="Design of CNN" width="100%" style="min-width:150px;" />
-
+<p align=center>
+    <img src="readme-lib\Design of CNN.png" alt="Design of CNN" width="100%" style="min-width:150px;" />
+</p>
 
 
 
@@ -151,9 +151,9 @@ The network is trained with images having *150-pixels* height, *150-pixels* widt
 > The detail about training progress is shown in this figure.
 
 
-
-<img src="readme-lib\Training Progress of CNN.png" alt="Training Progress of CNN" width="100%" style="min-width:150px;" />
-
+<p align=center>
+    <img src="readme-lib\Training Progress of CNN.png" alt="Training Progress of CNN" width="100%" style="min-width:150px;" />
+</p>
 
 
 
@@ -163,8 +163,9 @@ When training is complete, the Convolutional Neural Network achieve an accuracy 
 
 
 
-<img src="readme-lib\validation.jpg" alt="validation" width="70%" style="min-width:150px;" />
-
+<p align=center>
+    <img src="readme-lib\validation.jpg" alt="validation" width="70%" style="min-width:150px;" />
+</p>
 
 
 
