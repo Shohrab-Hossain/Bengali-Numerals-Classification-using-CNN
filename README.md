@@ -8,7 +8,7 @@
 
 **Digital image processing** investigates the portrayal and the control of *pictorial data*. With the development in *Machine Learning*, digital image processing is being promised over time. This research is an example of **Optical Character Recognition (OCR)**, where `Convolutional Neural Network (CNN)` is used for the *classification* of **`Bengali Numerals`**.
 
-
+</br>
 
 > Topics of this study are listed below:
 
@@ -22,7 +22,7 @@
 5. [Conclusion](#conclusion)
 
 
-
+</br>
 
 # Image Processing
 
@@ -33,6 +33,7 @@ The machine learning tools and algorithm consists of `Support Vector Machine (SV
 The **Convolutional Neural Network (CNN)** offers unique features that make this model more suitable for image processing. One of the significant features of CCN is *eliminating the need* for `manual feature extraction`. Another essential feature is that one CNN model can be used for *different recognition tasks*. The existing CNN model can learn to recognise new patterns with new learning or training data.
 
 
+</br>
 
 ## Optical Character Recognition (OCR)
 
@@ -40,55 +41,63 @@ The **Convolutional Neural Network (CNN)** offers unique features that make this
 
 
 
-
+</br>
+</br>
 
 # Introduction to Research Planning
 
 This research is based on **Optical Character Recognition (OCR)**. In this study, a system will be designed to recognise `Bengali numerals`. The numerals are *handwritten*, and the numerical dataset will be collected from a cloud-based repository. Data will be preprocessed first and then randomly split into training and testing data. Here a **`Convolutional Neural Network (CNN)`** will be designed. The CNN will be trained using the training dataset of Bengali handwritten numerical. After training, the CNN will be tested using the testing dataset for recognition accuracy.
 
-
+</br>
 
 ## Methodology
 
 This study aims to deploy a CNN for Optical Character Recognition. The methodology of this research is shown in this figure.
 
+</br>
+</br>
 
 <p align=center>
     <img src="readme-lib\Methodology.png" alt="Methodology" width="40%" style="min-width:150px;" />
 </p>
   
 
-
+</br>
+</br>
 
 ## Design of a Convolutional Neural Network
 
 The CNN also consists of input and output layers like other neural networks. In between these two layers, there are many hidden layers. Some hidden layers are for feature extraction and a layer for classification.
 
+</br>
+</br>
 
 <p align=center>
     <img src="readme-lib\Design of CNN.png" alt="Design of CNN" width="100%" style="min-width:150px;" />
 </p>
 
 
-
+</br>
+</br>
 
 Details about each of these layers can be found [here](https://uk.mathworks.com/discovery/convolutional-neural-network-matlab.html).
 
 
-
+</br>
+</br>
 
 
 # Implementation in MATLAB
 
 This research is implemented in MATLAB, and the version used is R2021b. MATLAB has excellent resources for deep neural networks, and also it provides inbuilt functions for different NN applications.
 
-
+</br>
 
 ## Data Collection
 
 For this study, a dataset of handwritten Bengali numerals is required. The dataset is collected from a [cloud-based repository](https://data.mendeley.com/datasets/hf6sf8zrkc/2?__cf_chl_captcha_tk__=0eef3f155bb8cdbd4318462de9ce43b06e8b36fe-1576926645-0-ARwIJOlc0pqWADHpP7QJNSnlLmWPdU95TWcw8RABhCTk-MHuKadBfXUxQednw2omNlWNN2YFffaQjm6HFtzYhbKIaX6ZXIydnz6nMJUQL1p3MoCjLaD8C1Y7P2F33-MAWE3Eo1NstIjhrEzpMBoz4nmc0z8Fx1uftg5rDt5YCNCiWsBY4VcaijT_NXaReFueYu3CBgk-he-9c_Xr7FhsPoQCpg8ThfHCmELrGY8f5EKmi5eFhBEWP6-1JpByjl4Z4Qr5-3zWmjn0uBsoPF2DKD6SE10QnF1hcUP5rHbSfV4Iv8mLUYoTLLeArXclMmeNEQuWKo_AgS5fAzLFuFCf_DI). The images of 10 Bengali numerals from this dataset are collected for this study. The collected dataset can be found in this GitHub repository.
 
-
+</br>
 
 **Table 01: Number of images in each class**
 
@@ -101,11 +110,14 @@ For this study, a dataset of handwritten Bengali numerals is required. The datas
 |     4     |         1980         |   9   |         1967         |
 
 
+</br>
 
 ## Data Preprocessing
 
 The collected data are **preprocessed** to meet the *criteria* for the CNN. The designed CNN model requires images with dimensions `150-by-150` and have a `grey-scale` colour channel. The collected images have a grey-scale channel, but they don't match the dimension requirement. So, the images are *resized* to make the dimension150-by-150.
 
+
+</br>
 
 
 ## Splitting Data into Training and Testing Data
@@ -113,6 +125,7 @@ The collected data are **preprocessed** to meet the *criteria* for the CNN. The 
 After preprocessing, data are split into training data and testing data. **`75%`** of data are used for *training*, and **`25%`** are for *validation*.
 
 
+</br>
 
 ## Creation of CNN
 
@@ -127,12 +140,13 @@ There is a `fully connected classification layer` with ten classes, as Bengali n
 The classification layer generates prediction values for each of the classes. The class with the maximum prediction will be considered the output for the image that is being tested.
 
 
+</br>
 
 ## Training the Network
 
 The training process starts with a **`0.001`** learning rate. The max epoch will be ten during training, and the data will be shuffled after each epoch. The network is trained using the training data, **`75%`** of the total data. 
 
-
+</br>
 
 ## Testing the Network
 
@@ -140,13 +154,15 @@ While training the network, the software calculates the accuracy of the testing 
 
 
 
-
+</br>
+</br>
 
 # Result Analysis
 
 The network is trained with images having *150-pixels* height, *150-pixels* width, and a bit depth of *8-bit*. The training images of a grey-scale channel. The machine used for training has `8.00 Gigabyte` RAM, a processor `Intel(R) Core(TM) i7-4500UCPU` with speed `1.80GHz` and `2.40 GHz`, and a `64-bit` Operating System.
 
 
+</br>
 
 > The detail about training progress is shown in this figure.
 
@@ -156,18 +172,21 @@ The network is trained with images having *150-pixels* height, *150-pixels* widt
 </p>
 
 
+</br>
 
 
 The network training is completed in **`10 epochs`**, and the total training time is `107 minutes and 25 seconds`. The network has a learning rate `of 0.001`.
 When training is complete, the Convolutional Neural Network achieve an accuracy of **95.05%**. The recognition accuracy of some randomly selected Bengali numerals from testing data is shown in this figure.
 
-
+</br>
 
 <p align=center>
     <img src="readme-lib\validation.jpg" alt="validation" width="70%" style="min-width:150px;" />
 </p>
 
 
+</br>
+</br>
 
 
 # Conclusion
@@ -176,15 +195,22 @@ In this research, a **`Convolutional Neural Network`** is designed for **Optical
 
 
 
-
+</br>
+</br>
 
 
 
 ---
 
+</br>
+</br>
 
 
 # Important Links
 
 1. Documentation of Convolution Neural Network :  [Link](https://uk.mathworks.com/discovery/convolutional-neural-network-matlab.html)
 2. Cloud repository of Bengali Dataset : [Link](https://data.mendeley.com/datasets/hf6sf8zrkc/2?__cf_chl_captcha_tk__=0eef3f155bb8cdbd4318462de9ce43b06e8b36fe-1576926645-0-ARwIJOlc0pqWADHpP7QJNSnlLmWPdU95TWcw8RABhCTk-MHuKadBfXUxQednw2omNlWNN2YFffaQjm6HFtzYhbKIaX6ZXIydnz6nMJUQL1p3MoCjLaD8C1Y7P2F33-MAWE3Eo1NstIjhrEzpMBoz4nmc0z8Fx1uftg5rDt5YCNCiWsBY4VcaijT_NXaReFueYu3CBgk-he-9c_Xr7FhsPoQCpg8ThfHCmELrGY8f5EKmi5eFhBEWP6-1JpByjl4Z4Qr5-3zWmjn0uBsoPF2DKD6SE10QnF1hcUP5rHbSfV4Iv8mLUYoTLLeArXclMmeNEQuWKo_AgS5fAzLFuFCf_DI) 
+
+
+</br>
+</br>
