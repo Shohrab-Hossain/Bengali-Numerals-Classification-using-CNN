@@ -203,7 +203,7 @@ In this research, a **`Convolutional Neural Network`** is designed for **Optical
 ---
 
 </br>
-</br>
+
 
 
 # Important Links
